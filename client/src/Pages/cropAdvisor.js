@@ -26,7 +26,7 @@ const handleSubmit = async (event) => {
 event.preventDefault();
 setLoading(true);
 try {
-const response = await fetch('http://34.131.168.190:5000/api/cropAdvisor', {
+const response = await fetch('https://farmstack-server-4.onrender.com/api/cropAdvisor', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json'

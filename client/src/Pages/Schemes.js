@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchSchemes = async () => {
-      const res = await axios.get('http://34.131.168.190:5000/api/schemes');
+      const res = await axios.get('https://farmstack-server-4.onrender.com/api/schemes');
       setSchemes(res.data);
     };
     fetchSchemes();

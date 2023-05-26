@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://farmstack-server-4.onrender.com",
+  "proxy": "https://farmstack-server-4.onrender.com/",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.18",

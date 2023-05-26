@@ -86,7 +86,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `http://34.131.168.190:5000/api/user?search=${search}`,
+        `https://farmstack-server-4.onrender.com/api/user?search=${search}`,
         config
       );
 
@@ -116,7 +116,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://34.131.168.190:5000/api/chat`,
+        `https://farmstack-server-4.onrender.com/api/chat`,
         { userId },
         config
       );

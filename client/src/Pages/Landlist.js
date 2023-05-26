@@ -16,7 +16,7 @@ function Landlist() {
 
     const fetchCards = async () => {
         try {
-          const response = await axios.get('http://34.131.168.190:5000/api/land');
+          const response = await axios.get('https://farmstack-server-4.onrender.com/api/land');
           setCards(response.data);
         } catch (error) {
           console.error('Error fetching cards:', error);
@@ -35,7 +35,7 @@ function Landlist() {
         const newCard = {location, price};
 
         try {
-            await axios.post('http://34.131.168.190:5000/api/land', newCard);
+            await axios.post('https://farmstack-server-4.onrender.com/api/land', newCard);
             fetchCards();
             setLocation('');
             setPrice('');

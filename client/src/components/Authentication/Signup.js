@@ -60,7 +60,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://34.131.168.190:5000/api/user",
+        "https://farmstack-server-4.onrender.com//api/user",
         {
           name,
           email,

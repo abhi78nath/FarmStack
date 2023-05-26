@@ -51,7 +51,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "http://34.131.168.190:5000/api/user/login",
+        "https://farmstack-server-4.onrender.com//api/user/login",
         { email, password },
         config
       );

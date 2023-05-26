@@ -41,7 +41,7 @@ import {
   const Edit = ({user,fetchposts,data}) => {
 
     const [post, setPost] = useState({title:data?.title,description:data?.description,imageurl:data?.image})
-    const host="http://34.131.168.190:5000"
+    const host="https://farmstack-server-4.onrender.com"
     const handleupdate=async()=>{
       const res=await axios.put(`${host}/api/blog/update/${data._id}`,{title:post.title,description:post.description,image:post.imageurl})
       // const res=await axios.put(`/api/blog/update/${data._id}`,{title:post.title,description:post.description,image:post.imageurl})

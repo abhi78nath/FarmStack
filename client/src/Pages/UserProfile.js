@@ -10,7 +10,7 @@ const UserProfile = () => {
   const [feeds, setFeeds] = useState(feedsInitial);
   const getFeeds = async () => {
     //API call
-    const response = await fetch("http://34.131.168.190:5000/api/feed/fetchallfeeds", {
+    const response = await fetch("https://farmstack-server-4.onrender.com/api/feed/fetchallfeeds", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
