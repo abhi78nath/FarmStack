@@ -51,7 +51,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "https://farmstack-server-4.onrender.com//api/user/login",
+        "https://farmstack-server-4.onrender.com/api/user/login",
         { email, password },
         config
       );
