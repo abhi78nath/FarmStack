@@ -40,7 +40,7 @@ import {
     const handlechange=(e)=>{
         setPost({...post,[e.target.name]:e.target.value});
     }
-    const host="https://farmstack-server-4.onrender.com/"
+    const host="https://farmstack-server-4.onrender.com"
     const handleAdd=async()=>{
         const ress=await axios.post(`${host}/api/blog/add`,{title:post.title,description:post.description,image:post.imageurl,user:JSON.parse(localStorage.getItem("userInfo", 'token'))});
         // const ress=await axios.post(`/api/blog/add`,{title:post.title,description:post.description,image:post.imageurl,user:localStorage.getItem('auth-token')});
