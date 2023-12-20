@@ -21,11 +21,11 @@ console.log(blogs);
       ) : (
         <>
           
-     { blogs?.map((e,i)=>{
-          return <div key={i}>
-            <Post data={e} user={user}  fetchposts={fetchposts}/>
-          </div>
-      })}
+          {blogs?.slice().reverse().map((e, i) => (
+            <div key={i}>
+              <Post data={e} user={user} fetchposts={fetchposts} />
+            </div>
+          ))}
         </>
       )}
     </Box>
