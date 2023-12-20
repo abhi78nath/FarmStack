@@ -21,7 +21,7 @@ console.log(blogsall);
       ) : (
         <>
           
-     { blogsall?.map((e,i)=>{
+     { blogsall?.reverse().map((e,i)=>{
           return <div key={i}>
             <PostAll data={e}   fetchposts={fetchposts}/>
           </div>
